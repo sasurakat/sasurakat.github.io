@@ -4,8 +4,6 @@
     margin: 0;
     box-sizing: border-box;
 }
-
-
 body{
     background-color: hsl(0, 0%, 98%);
     min-height: 67vh;
@@ -16,7 +14,6 @@ body{
     width: 100%;
     justify-content: center;
     align-items: center;
-  
 }
 .container{
    
@@ -24,7 +21,6 @@ body{
     width: 100%;
     position: relative;  
 }
-
 #header{
     display: flex;
     justify-content: space-between;
@@ -33,22 +29,22 @@ body{
     padding: 15px 30px;
     background-color: hsl(0, 0%, 100%);
 }
-.headerText{
-    font-weight: 800;
+.light{
+    font-size: 13px;
 }
 .dark{
     display: none;
 }
-.light{
-    font-size: 13px;
+.headerText{
+    font-weight: 800;
 }
 #mode{
     font-weight: 400;
     font-size: 13px;
     cursor: pointer;
-
 }
-/* #region MAin */
+
+/*Region Main */
 .main{
     width: 100%;
     padding: 30px;
@@ -63,7 +59,7 @@ body{
     display: flex;
     justify-content: space-between;
 }
-.searchwrap{
+.searchbox{
     display: flex;
     box-shadow: 0px 2px 5px hsl(0, 0%, 52%);
     padding: 8px 20px;
@@ -88,3 +84,88 @@ body{
     font-size: 90%;
     padding: 15px 0;
 }
+.filterbox{
+    display: flex;
+    border-radius: 3px;
+    width: 20%;
+    box-shadow: 0px 2px 5px hsl(0, 0%, 52%);
+    padding: 8px 10px;
+    background-color:hsl(0, 0%, 100%);
+}
+#filter{
+    cursor: pointer;
+    font-weight: 600;
+    width: 100%;
+    padding: 2px ;
+    font-size: 14px;
+    color: hsl(0, 0%, 52%);
+    outline: none;
+    border: none;
+}
+.regions{
+    border: none;
+    outline: none;
+ 
+    font-size: 100%;
+    width: 100%;
+}
+.optionwrap{
+    width: 100%;
+}
+#countries{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 2rem;
+    padding-top: 30px;
+    width: 100%;
+    grid-auto-rows: min-content ;
+    
+}
+.country{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    border-radius: 3px;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 0px 1px 1px hsl(0, 0%, 52%); 
+}
+.country-flag{
+    width: 100%;
+    height: 100%;  
+}
+.imgwrap {
+    height: 100%; 
+     width: 100%;
+}
+
+
+/*Region Main*/
+
+.GeneralExtra{
+    padding: 30px;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 9;
+    display: none;
+}
+.backbtn{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px 15px;
+    width: 12%;
+    border-radius: 10px;
+    box-shadow: 0px 1px 5px hsl(0, 0%, 52%);
+}
+/* .btnbk i{
+    font-size: 18px;
+}
+.btnbk span{
+    padding-left: 10px;
+    font-weight: 600;
+    font-size: 16px;
+} */
