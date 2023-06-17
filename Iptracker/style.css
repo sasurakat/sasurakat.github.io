@@ -24,14 +24,16 @@
   
 }
 
-.submit-botton {
+.submit-button{
   position: absolute;
   border-color: transparent;
   background-color: rgb(15, 13, 13);
   padding: 1rem;
   border-radius: 0 15px 15px 0;
   cursor: pointer;
-  height: 5rem;
+  height: 4.1rem;
+  margin-left: -2rem;
+  margin-top: -1.8px;
 }
 
 .search-Layer {
@@ -94,7 +96,6 @@ span.results {
 
 /* Media queries */
 
-/* Small screens (mobile devices) */
 @media only screen and (max-width: 767px) {
   .layer1 {
     margin-top: 10px;
@@ -105,9 +106,9 @@ span.results {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .submit-botton {
-    position: static;
+    position: absolute;
     margin-top: 10px;
     border-radius: 15px;
     height: auto;
