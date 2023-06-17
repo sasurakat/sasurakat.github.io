@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <title>IP Address Tracker</title>
+</head>
+<body>
+
+<!-- Top Background -->
+<div id="TopBackground">
+    <img src="images/pattern-bg-desktop.png" alt="background">
+
+    <div class="layer1">
+        <h2 id="Tracker" style="color: white;">IP Address Tracker</h2>
+    </div>
+
+    <div class="Search_Container">
+        <form method="get" class="search-Layer" style="">
+            <input type="text" placeholder="Search for any IP address or domain" required class="input-field">
+            <button type="submit" class="submit-button">
+                <svg xmlns="http://www.w3.org/2000/svg" width="27" height="57" fill="white" class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+                </svg>
+            </button>
+        </form>
+    </div>
+
+    <div class="ISPdisplay">
+        <div class="info">
+            <h4 class="title">IP Address</h4>
+            <span id="currentip" class="response">192.212.174.101</span>
+        </div>
+        <div class="info">
+            <h4 class="title">Location</h4>
+            <span id="currenttown" class="response">Brooklyn, NY 10001</span>
+        </div>
+        <div class="info">
+            <h4 class="title">Timezone</h4>
+            <span id="current_zone" class="response">UTC - 05:00</span>
+        </div>
+        <div class="info">
+            <h4 class="title">ISP</h4>
+            <span id="currentisp" class="response">SpaceX Starlink</span>
+        </div>
+    </div>
+</div>
+
+<div id="MAPDISPLAY"></div>
+
+<!-- Include the Leaflet library and script.js file -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
+<script src="script.js" defer></script>
+</body>
+</html>

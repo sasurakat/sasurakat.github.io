@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Commissioner:wght@300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Commissioner', sans-serif;
+}
+
+.layer1 {
+  position: absolute;
+  margin-top: -30vh;
+  margin-left: 40%;
+}
+
+.Tracker{
+ margin-top: -2px;
+}
+.Search_Container {
+  position: relative;
+  display: flex;
+  flex-direction: initial;
+  justify-content: center;
+  
+}
+
+.submit-botton {
+  position: absolute;
+  border-color: transparent;
+  background-color: rgb(15, 13, 13);
+  padding: 1rem;
+  border-radius: 0 15px 15px 0;
+  cursor: pointer;
+  height: 5rem;
+}
+
+.search-Layer {
+  margin-top: -9rem;
+}
+
+.input-field::placeholder {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.input-field[type="text"] {
+  font-size: 15px;
+  padding: 1.1rem;
+  font-weight: 300;
+  width: 33rem;
+}
+
+.ISPdisplay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -60px;
+  background-color: #fff;
+  max-width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  min-height: 130px;
+  position: relative;
+  z-index: 1000;
+  padding: 30px;
+}
+
+.info {
+  border-right: 1px solid;
+  min-height: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0 15px;
+}
+
+.info-block-last {
+  border-right: none;
+}
+
+.title {
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+span.results {
+  font-weight: 500;
+  color: #2b2b2b;
+  font-size: 16px;
+}
+
+/* Media queries */
+
+/* Small screens (mobile devices) */
+@media only screen and (max-width: 767px) {
+  .layer1 {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  
+  .Search_Container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .submit-botton {
+    position: static;
+    margin-top: 10px;
+    border-radius: 15px;
+    height: auto;
+  }
+  
+  .search-Layer {
+    margin-top: -6rem;
+  }
+  
+  .input-field[type="text"] {
+    width: 100%;
+  }
+  
+  .ISPdisplay {
+    max-width: 90%;
+    padding: 20px;
+  }
+}
+#MAPDISPLAY{
+  margin-top: -70px;
+  min-height: 79vh;
+}
+
+
+/* Medium screens (tablets) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .layer1 {
+    margin-top: -15vh;
+    margin-left: 30%;
+  }
+  
+  .input-field[type="text"] {
+    width: 25rem;
+  }
+}
+
+/* (desktops) */
+@media only screen and (min-width: 1024px) {
+
+}

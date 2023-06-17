@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Countries API</title>
+    <link rel="stylesheet" href="style.css">
+
+   
+    <script src="https://kit.fontawesome.com/33a7dca87f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- <div id="loader" class="center"></div> -->
+    <div class="container">
+        
+        <header id="header">
+            <p class="headerText">Where in the world?</p>
+          
+            <div class="settings">
+                <i class="fa-solid fa-moon dark" id="darkMoon"></i>
+                <i class="fa-regular fa-moon light" id="lightMoon"></i>
+                <span id="mode">Dark Mode</span>
+            </div>   
+            
+        </header>
+        <!-- <div id="loader" class="center"></div> -->
+        <div class="main">
+            <div class="subhead">
+                <div class="searchwrap">
+                    <span id="searchicon"> <i class="fa-solid fa-magnifying-glass" class="search-icon'"></i></span>
+                    <input type="search" name="" id="search" placeholder="Search for a country...">
+    
+                </div>
+                <div class="filter-wrap">
+                    <select name="regions" id="filter" >
+                            <option  value="">Filter by Region</option>
+                            <option value="Africa" class="regions">Africa</option>
+                            <option value="Americas" class="regions">Americas</option>
+                            <option value="Asia" class="regions">Asia</option>
+                            <option value="Europe" class="regions">Europe</option>
+                            <option value="Oceania" class="regions">Oceania</option>                    
+                    </select>     
+                </div>
+    
+            </div>
+
+            <div id="countries">
+             
+            </div>
+                
+        </div>
+        <div class="mainExtra">
+            <div class="btnbk">
+                <i class="fa-solid fa-arrow-left-long"> </i><span>Back</span>
+            </div>
+            <div class="country-info-Container">
+                <div class="hero-img">
+                    <img src="" alt="" id="cflag">
+                </div>
+                <div class="info-container">
+                    <p id="C-Name" class="colhead" >Name of Country</p>
+                    <div class="more-info">
+                        <div class="col1">
+                            <p class="colhead">Native Name: <span id="native"></span></p>
+                            <p class="colhead">Population: <span id="cpopulation"></span></p>
+                            <p class="colhead">Region: <span id="cregion"></span></p>
+                            <p class="colhead">Sub Region: <span id="subregion"></span></p>
+                            <p class="colhead">Capital: <span id="ccapital"></span></p>
+
+                        </div>
+                        <div class="col2">
+                            <p class="colhead">Top Level Domain: <span id="domain"></span></p>
+                            <p class="colhead">Currencies: <span id="currency"></span></p>
+                            <p class="colhead">Languages: <span id="lang"></span></p>
+                           
+                        </div>
+                    </div>
+                    <div class="borderWrap">
+                        <span class="colhead">Border Countries:</span>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
