@@ -1,9 +1,8 @@
 'use strict';
 
-// Import API_KEY from key.js
 const API_KEY = '6f3816355e174553ab98cf5740385a0a';
 
-// Get HTML elements
+// get HTML elements
 var current_ip = document.getElementById('currentip');
 var current_town = document.getElementById('currenttown');
 var current_zone = document.getElementById('current_zone');
@@ -12,20 +11,20 @@ var current_isp = document.getElementById('currentisp');
 var entered_ip = document.querySelector('.input-field');
 var search_btn = document.querySelector('.submit-button');
 
-// Create Leaflet map
-var map = L.map('MAPDISPLAY').setView([34.0614, -118.08162], 13);
+// leaflet map
+var map = L.map('MAPDISPLAY').setView([6.510030, 3.360610], 13);
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
   attribution:
     '© <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
 }).addTo(map);
 
-// Function to update map marker and view
-var updateMarker = (update_marker = [9.0765, 7.3986]) => {
+// function to update map marker and view
+var updateMarker = (update_marker = [6.510030, 3.360610]) => {
   map.setView(update_marker, 13);
   L.marker(update_marker).addTo(map);
 };
 
-// Function to get IP details
+// function to get IP details
 var getIPDetails = (default_ip) => {
   let ip_url;
   if (default_ip === undefined) {
